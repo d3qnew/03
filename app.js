@@ -9,8 +9,12 @@ var lessMiddleware = require('less-middleware');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+////////////////////////////////////////////////////////
+var session = require('express-session');
+/////////////////////////////////////////////////////////
 
 var app = express();
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -24,6 +28,19 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
+//////////////////////////////////////
+//connect中间件session
+//需要修改的
+app.use(cookieParser("An"));
+//需要添加的
+app.use(session({
+    secret: 'an',
+    resave: false,
+    saveUninitialized: true
+}));
+
+
+//////////////////////////////////////
 app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -34,6 +34,26 @@ module.exports = {
     },
     u: function (sql) {
         console.log('this is u()');
+    },
+
+    ////////////////////////////////////////////////////////////////////
+    selectFun: function (username, callback) {
+        //client为一个mysql连接对象
+        this.init().query('select pass from account where account="' + username + '"', function (err, results, fields) {
+            if (err) throw err;
+
+            callback(results);
+        });
+    },
+    ///////////////////////////////////////////////////////////////////////
+    insertFun:function (dbcon , username , password,callback) {
+        this.init().query('insert into account value(?,?)', [username, password], function (err, result) {
+            if (err) {
+                console.log("error:" + err.message);
+                return err;
+            }
+            callback(err);
+        });
     }
 
 }
