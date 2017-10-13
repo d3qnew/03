@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var lessMiddleware = require('less-middleware');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+
 
 ////////////////////////////////////////////////////////
 var session = require('express-session');
@@ -27,14 +27,12 @@ app.set('view engine', 'html');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(cookieParser());
+
 //////////////////////////////////////
-//connect中间件session
-//需要修改的
-app.use(cookieParser("An"));
-//需要添加的
+//cookie session
+app.use(cookieParser("mylch"));
 app.use(session({
-    secret: 'an',
+    secret: 'mylch',
     resave: false,
     saveUninitialized: true
 }));
@@ -45,7 +43,7 @@ app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+//app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
