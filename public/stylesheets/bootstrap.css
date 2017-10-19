@@ -3528,7 +3528,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 14px;
-  text-align: left;
+  text-align: center;
   list-style: none;
   background-color: #fff;
   -webkit-background-clip: padding-box;
@@ -3983,7 +3983,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 0px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4003,8 +4003,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eee;
-  border-color: #337ab7;
+
 }
 .nav .nav-divider {
   height: 1px;
@@ -4228,8 +4227,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4283,6 +4281,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: right;
   margin-right: 15px;
 
+
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4327,7 +4326,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 0 ;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4510,10 +4509,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 }
 .navbar-default .navbar-text {
-  color: #777;
+  
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #333;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4523,17 +4522,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
+
 
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #ccc;
+
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
   border-color: #ddd;
+
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
