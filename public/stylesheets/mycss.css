@@ -1,0 +1,260 @@
+.allwin {
+    background-color: #eee;
+}
+
+* {
+    color: #333;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.tempbk {
+    background-color: #ddd;
+}
+
+body {
+
+    font-weight: 300;
+    min-width: 350px !important;
+
+    font-family: Arial, Roboto, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+.tonopm {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.maxwidth {
+    width: 100%;
+}
+
+.tostatic {
+    position: static !important;
+}
+
+.totopauto {
+    top: auto !important;
+}
+
+.topadding0 {
+    padding: 0 !important;
+}
+
+.tonoborder {
+    border: 0;
+}
+
+.tonobackground {
+    background-color: #ffffff;
+}
+
+.CSCentered {
+    text-align: left;
+}
+
+.CSCentered li {
+    display: inline-block;
+}
+
+.addBLine li {
+    border-bottom: 1px red solid;
+    border-left: 3px #ffffff solid;
+}
+
+.addTBlock {
+    border-top: 5px red solid;
+}
+
+.noTBlock {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.Topshadownone {
+    box-shadow: 0 2px 2px #eee;
+}
+
+.MyNavbarLi li {
+    display: block !important;
+
+}
+
+.fright {
+    float: right !important;
+}
+
+.CSLeft li {
+    float: left !important;
+}
+
+.fnone {
+    float: none;
+}
+
+.fleft {
+    float: left !important;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.toclearboth {
+    clear: both;
+}
+
+.toclearright {
+    clear: right;
+}
+
+.inavbar {
+    position: static;
+    width: 100%;
+}
+
+.dropdown-menu {
+    border: 0 ;
+}
+
+.dropdown-menu li {
+
+}
+
+#example-navbar-collapse {
+    padding: 0 15px 0 15px !important;
+    width: 100%;
+    margin-left: 0;
+}
+
+.toborderbottom{
+    border-bottom: 1px solid #ddd;
+}
+
+.tolineheight60 {
+    line-height: 54px !important;
+}
+
+.tonavmenuls {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    padding: 0 15px;
+    float: none;
+    text-align: left;
+}
+
+.tonavmenuls li {
+     display: inline-block;
+     text-align: left;
+     padding: 0 15px;
+     line-height: 48px;
+     position: relative;
+    margin-top: -1px;
+
+ }
+
+.tonavmenuls li a{
+    display: block;
+    border-bottom: 1px solid #ccc;
+    height: 56px;
+    line-height: 56px;
+    overflow: hidden;
+}
+
+.tonavmenuls li a:hover{
+    color: #e50000;
+}
+
+.navbar-top-line{
+    border-top: 1px solid #ccc;
+    margin: 0 15px;
+}
+
+.navbar-titel-borderx{}
+
+.navbar-titel-borderx:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 7px;
+    content: "";
+    background-color: #ddd;
+}
+
+.navbar-titel-borderx:after{
+    position: absolute;
+    bottom:-1px;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 1px;
+    content: "";
+    background-color: #ddd;
+}
+
+.navbar-titel-border{}
+
+.navbar-titel-border:before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 7px;
+    content: "";
+    background-color: #e50000;
+}
+
+.navbar-titel-border:after{
+    position: absolute;
+    bottom:-1px;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 1px;
+    content: "";
+    background-color: #e50000;
+}
+
+.navbaropen{
+    transition: color 0.4s;
+    z-index: 9999;
+}
+.navbaropen+ul{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.navmenuls-min{
+    border: 0 !important;
+    height: 48px !important;
+    line-height: 48px !important;
+}
+
+.navmenuls-min-last{
+    border-bottom: 1px solid #ddd !important;
+    height: 48px !important;
+    line-height: 48px !important;
+}
+
+
+a{
+    text-decoration: none !important;
+    color: #333;
+}
+a:hover{
+    color: #e50000 !important;
+
+}
