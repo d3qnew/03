@@ -13,6 +13,7 @@ $(document).ready(function () {
     });
 
     function notx() {
+ 
         $(".navbaropen").off();
         $(".navbaropen").removeClass("navbar-titel-border navbar-titel-borderx");
         $(".navbaropen").first().css("color", "#e50000");
@@ -29,6 +30,7 @@ $(document).ready(function () {
     }
 
     function tx() {
+
         $("#example-navbar-collapse ul").removeClass("toborderbottom");
         $(".tonavmenuls li a").removeClass("navmenuls-min");
         $(".tonavmenuls").css("border-bottom", "0px");
@@ -56,8 +58,6 @@ $(document).ready(function () {
                 $(".navbaropen").each(function () {
                     $(this).css('color', '#333');
                     $(this).removeClass("navbar-titel-border");
-                    $(".navbaropen").first().addClass("navbar-titel-border");
-
                 });
             }
         });
